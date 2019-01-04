@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@android:id/custom"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#28a9ff" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="#28a9ff">
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:src="@mipmap/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="我的签到"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:src="@mipmap/more" />
+    </RelativeLayout>
+
+    <!--<include-->
+    <!--layout="@layout/universal_div"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="1px"-->
+    <!--android:layout_marginTop="16dp" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <com.jh.spannablestringdemo.RoundImageView
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:src="@mipmap/photo"
+            app:borderRadius="8dp"
+            app:type="circle" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="码农小阿飞"
+                android:textColor="#363636"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/text01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="共累计完成签到24次"
+                android:textColor="#727272"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_btn_sign"
+            android:paddingLeft="12dp"
+            android:paddingTop="6dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="6dp"
+            android:text="签到"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        android:paddingLeft="12dp"
+        android:paddingTop="16dp"
+        android:paddingRight="12dp"
+        android:paddingBottom="18dp">
+
+        <TextView
+            android:id="@+id/text02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="3dp"
+            android:text="这是我的博客地址：http://www.jianshu.com/users/dbae9ac95c78，欢迎大家关注！"
+            android:textColor="#727272"
+            android:textSize="17sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="18dp"
+        android:paddingRight="12dp"
+        android:paddingTop="16dp"
+        android:paddingLeft="12dp"
+        android:gravity="center"
+        android:paddingBottom="18dp"
+        android:background="#FFFFFF" >
+
+        <TextView
+            android:id="@+id/text06"
+            android:textColor="#727272"
+            android:text="点击淡蓝色背景文字跳转页面"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="12dp"
+        android:paddingTop="16dp"
+        android:paddingRight="12dp"
+        android:paddingBottom="18dp">
+
+        <TextView
+            android:id="@+id/text07"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#727272"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="12dp"
+        android:paddingTop="16dp"
+        android:paddingRight="12dp"
+        android:paddingBottom="18dp">
+
+        <TextView
+            android:id="@+id/text03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¥499"
+            android:textColor="#727272"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/text04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/text03"
+            android:text=" ¥700 "
+            android:textColor="#818181"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="#FFFFFF"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/text05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="看，这里的文字会动哦！"
+            android:textColor="#0099EE"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</LinearLayout>
